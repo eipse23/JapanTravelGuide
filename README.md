@@ -33,5 +33,4 @@ City Selection: The dropdown menu is designed for quick city selection, enhancin
 Weather Forecast: Information is presented in a clear, structured format, with icons and temperatures for easy comprehension.
 Popular Places: Each place is linked to Google Maps, providing users with direct access to location details and directions.
 
-Conclusion
 This application aims to be a comprehensive travel companion for tourists visiting Japan, offering essential information in an accessible and user-friendly manner.
