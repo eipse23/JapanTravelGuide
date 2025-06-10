@@ -60,7 +60,16 @@
           <article v-for="place in places" :key="place.id" class="place" tabindex="0" :aria-label="'Details for ' + place.name">
             <i class="fas fa-map-marker-alt" aria-hidden="true"></i>
             <div class="place-details">
-              <h3 class="place-name">{{ place.name }}</h3>
+              <h3 class="place-name">
+                <a
+                  v-if="place.geocodes?.main?.latitude && place.geocodes?.main?.longitude"
+                  :href="`https://www.google.com/maps?q=${place.geocodes.main.latitude},${place.geocodes.main.longitude}`"
+                  target="_blank" rel="noopener noreferrer"
+                  aria-label="View location on Google Maps"
+                >
+                  {{ place.name }}
+                </a>
+              </h3>
 
               <!-- Place Address -->
               <p class="place-location">
